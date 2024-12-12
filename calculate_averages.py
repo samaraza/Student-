@@ -4,7 +4,7 @@ def calculate_averages(students_grade, clear_terminal):
     clear_terminal()
     print("Student Averages:  ")
     for name , grade in students_grade.items():
-        average = (float(grade['grade1']) + float(grade['grade2']) + float(grade['grade3']))
+        average = (float(grade['grade1']) + float(grade['grade2']) + float(grade['grade3'])/3)
         print(f"{name}: {average} ")
   except KeyError:
       print("Missing grade information for a student.")
